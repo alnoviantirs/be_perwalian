@@ -1,0 +1,1 @@
+export let urlAPI = "https://alnovianti.herokuapp.com/mahasiswa";
