@@ -6,8 +6,8 @@ export function isiTablePerwalian(results) {
 }
 function isiRow(value) {
     let content =
-        iniTabel.replace("#NAMA#", value.biodata.nama)
-            .replace("#NOHP#", value.biodata.phone_number)
-            .replace("#JURUSAN#", value.biodata.jurusan);
+        iniTabel.replace("#NAMA#", value.nama)
+            .replace("#NOHP#", value.phone_number)
+            .replace("#JURUSAN#", value.jurusan);
     addInner("iniTabel", content);
 }
