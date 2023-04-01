@@ -6,8 +6,8 @@ export function isiTablePerwalian(results) {
 }
 function isiRow(value) {
     let content =
-        iniTabel.replace("#NAMA#", value.nama)
-            .replace("#NOHP#", value.phone_number)
-            .replace("#JURUSAN#", value.jurusan);
+        iniTabel.replace("#NAMA#", value.mahasiswa.nama)
+            .replace("#NOHP#", value.mahasiswa.phone_number)
+            .replace("#JURUSAN#", value.mahasiswa.jurusan);
     addInner("iniTabel", content);
 }
