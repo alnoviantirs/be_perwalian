@@ -8,7 +8,6 @@ function isiRow(value) {
     let content =
         isiTabel.replace("#NAMA#", value.biodata.nama)
             .replace("#NOHP#", value.biodata.phone_number)
-            .replace("#JURUSAN#", value.biodata.jurusan)
-            .replace(/#WARNALOGO#/g, getRandomColorName());
+            .replace("#JURUSAN#", value.biodata.jurusan);
     addInner("iniTabel", content);
 }
