@@ -8,13 +8,12 @@ function isiRow(value) {
     let content =
         isiTabel.replace("#NAMA#", value.biodata.nama)
             .replace("#NOHP#", value.biodata.phone_number)
-            .replace("#JABATAN#", value.biodata.jabatan)
-            .replace("#LOKASI#", value.location)
-            .replace("#STATUS#", value.checkin)
-            .replace("#HARIKERJA#", value.biodata.hari_kerja ? value.biodata.hari_kerja: "HARIKERJA")
-            .replace("#JAMKERJA#", value.biodata.hari_kerja ? value.biodata.jam_kerja [0].durasi : "JAMKERJA")
-            .replace("#JAMMASUK#", value.biodata.hari_kerja ? value.biodata.jam_kerja [0].jammasuk : "JAMMASUK")
-            .replace("#JAMKELUAR#", value.biodata.hari_kerja ?value.biodata.jam_kerja [0].jamkeluar : "JAMKELUAR")
+            .replace("#JURUSAN#", value.biodata.jurusan)
+            .replace("#NAMAWALDOS#", value.walidosen.nama)
+            .replace("#TANGGAL#", value.time.tanggal)
+            .replace("#HARI#", value.time.hari)
+            .replace("#JAM#", value.time.jam)
+            .replace("#LOKASI#", value.lokasi)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);
